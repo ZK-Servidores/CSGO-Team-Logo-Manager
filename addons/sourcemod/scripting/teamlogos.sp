@@ -38,7 +38,7 @@ public Plugin myinfo =
     name = "Team Logo Management",
     author = "Neuro Toxin, uspeek, crashzk",
     description = "Team Logo Management",
-    version = "1.5.0"
+    version = "1.4.3"
 };
 
 public void OnPluginStart()
@@ -215,7 +215,7 @@ stock void AddTeamLogosToDownloadTable()
 	}
 	CloseHandle(dir);
 	
-	// check for Panorama UI images
+	// Check for Panorama UI Images
 	dir = OpenDirectory("materials/panorama/images/tournaments/teams/");
 	if (dir == null)
 	{
@@ -282,35 +282,37 @@ stock void SetTeamLogos(int logocount)
 
 stock void AddDefaultTeamLogos()
 {
-	PushArrayString(g_hTeamLogos, "astr1");
-	PushArrayString(g_hTeamLogos, "big1");
-	PushArrayString(g_hTeamLogos, "boom1");
-	PushArrayString(g_hTeamLogos, "chs1");
-	PushArrayString(g_hTeamLogos, "cld91");
-	PushArrayString(g_hTeamLogos, "col1");
-	PushArrayString(g_hTeamLogos, "dig1");
-	PushArrayString(g_hTeamLogos, "dtna1");
-	PushArrayString(g_hTeamLogos, "eg1");
-	PushArrayString(g_hTeamLogos, "enc1");
-	PushArrayString(g_hTeamLogos, "faze1");
-	PushArrayString(g_hTeamLogos, "fnt1");
-	PushArrayString(g_hTeamLogos, "fria1");
-	PushArrayString(g_hTeamLogos, "g3x1");
-	PushArrayString(g_hTeamLogos, "g21");
-	PushArrayString(g_hTeamLogos, "impe1");
-	PushArrayString(g_hTeamLogos, "isur1");
-	PushArrayString(g_hTeamLogos, "keyd1");
-	PushArrayString(g_hTeamLogos, "liqu1");
-	PushArrayString(g_hTeamLogos, "mibr1");
-	PushArrayString(g_hTeamLogos, "mous1");
-	PushArrayString(g_hTeamLogos, "navi1");
-	PushArrayString(g_hTeamLogos, "nip1");
-	PushArrayString(g_hTeamLogos, "pain1");
-	PushArrayString(g_hTeamLogos, "redc1");
-	PushArrayString(g_hTeamLogos, "tone1");
-	PushArrayString(g_hTeamLogos, "vita1");
-	PushArrayString(g_hTeamLogos, "vp1");
-	PushArrayString(g_hTeamLogos, "w7m1");
+	PushArrayString(g_hTeamLogos, "astrl");
+	PushArrayString(g_hTeamLogos, "boom");
+	PushArrayString(g_hTeamLogos, "brav");
+	PushArrayString(g_hTeamLogos, "c9");
+	PushArrayString(g_hTeamLogos, "chaos");
+	PushArrayString(g_hTeamLogos, "col");
+	PushArrayString(g_hTeamLogos, "detna");
+	PushArrayString(g_hTeamLogos, "dig");
+	PushArrayString(g_hTeamLogos, "ence");
+	PushArrayString(g_hTeamLogos, "faze");
+	PushArrayString(g_hTeamLogos, "fntc");
+	PushArrayString(g_hTeamLogos, "furia");
+	PushArrayString(g_hTeamLogos, "g2");
+	PushArrayString(g_hTeamLogos, "g3ner");
+	PushArrayString(g_hTeamLogos, "impe");
+	PushArrayString(g_hTeamLogos, "intz");
+	PushArrayString(g_hTeamLogos, "keyd");
+	PushArrayString(g_hTeamLogos, "liqui");
+	PushArrayString(g_hTeamLogos, "mibr");
+	PushArrayString(g_hTeamLogos, "mouz");
+	PushArrayString(g_hTeamLogos, "navi");
+	PushArrayString(g_hTeamLogos, "nip");
+	PushArrayString(g_hTeamLogos, "pain");
+	PushArrayString(g_hTeamLogos, "redc");
+	PushArrayString(g_hTeamLogos, "redm");
+	PushArrayString(g_hTeamLogos, "reneg");
+	PushArrayString(g_hTeamLogos, "tone");
+	PushArrayString(g_hTeamLogos, "vital");
+	PushArrayString(g_hTeamLogos, "vp");
+	PushArrayString(g_hTeamLogos, "w7m");
+	PushArrayString(g_hTeamLogos, "yeah");
 }
 
 stock void SetTeamName(const char[] logo, int team)

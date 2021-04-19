@@ -16,4 +16,4 @@ To change cvars values ​​just add to **`server.cfg`** and make the changes y
 ## Credits 
 - [Neuro Toxin](https://github.com/ntoxin66) for his [original plugin](https://github.com/ntoxin66/CSGO-Team-Logo-Manager);
 - [uspeek](https://github.com/uspeek) updated version of [Team Logo Manager](https://github.com/uspeek/CSGO-Team-Logo-Manager) with Panorama UI directory and default logos;
-- [crashzk]()
+- [crashzk](https://github.com/crashzk) updated Teams & Logos;
