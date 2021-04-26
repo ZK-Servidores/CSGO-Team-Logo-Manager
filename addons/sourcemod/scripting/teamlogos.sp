@@ -38,7 +38,7 @@ public Plugin myinfo =
     name = "Team Logo Management",
     author = "Neuro Toxin, uspeek, crashzk",
     description = "Team Logo Management",
-    version = "1.4.3"
+    version = "1.4.3fix"
 };
 
 public void OnPluginStart()
@@ -73,7 +73,7 @@ public void OnPluginStart()
 		return;
 	}
 
-	g_hRandomLogos = CreateConVar("teamlogo_randomlogos", "0", "Enables selection of random team logos on map load");
+	g_hRandomLogos = CreateConVar("teamlogo_randomlogos", "1", "Enables selection of random team logos on map load");
 	g_bRandomLogos = GetConVarBool(g_hRandomLogos);
 	HookConVarChange(g_hRandomLogos, OnConvarChanged);
 	
@@ -81,7 +81,7 @@ public void OnPluginStart()
 	g_bDefaultTeams = GetConVarBool(g_hDefaultTeams);
 	HookConVarChange(g_hDefaultTeams, OnConvarChanged);
 	
-	g_hTeamNames = CreateConVar("teamlogo_teamnames", "0", "Team names will be loaded from .cfg files with the same name and location as the logo file");
+	g_hTeamNames = CreateConVar("teamlogo_teamnames", "1", "Team names will be loaded from .cfg files with the same name and location as the logo file");
 	g_bTeamNames = GetConVarBool(g_hTeamNames);
 	HookConVarChange(g_hTeamNames, OnConvarChanged);
 	
@@ -90,7 +90,7 @@ public void OnPluginStart()
 	HookConVarChange(g_hHalftimeTeamswitch, OnConvarChanged);
 	
 	g_hAutoLogos = CreateConVar("teamlogo_autologos", "0", "Plugin will auto-select team logos based on player clan tags");
-	g_bAutoLogos = GetConVarBool(g_hAutoLogos);
+	g_bAutoLogos = GetConVarBool(g_hAutoLogos);	
 	HookConVarChange(g_hAutoLogos, OnConvarChanged);
 	
 	HookEvent("announce_phase_end", OnAnnouncePhaseEnd);
