@@ -77,7 +77,7 @@ public void OnPluginStart()
 	g_bRandomLogos = GetConVarBool(g_hRandomLogos);
 	HookConVarChange(g_hRandomLogos, OnConvarChanged);
 	
-	g_hDefaultTeams = CreateConVar("teamlogo_defaultlogos", "0", "Adds the Valve default logos to the team logo list if 'teamlogo_randomlogo' is set to 1");
+	g_hDefaultTeams = CreateConVar("teamlogo_defaultlogos", "1", "Adds the Valve default logos to the team logo list if 'teamlogo_randomlogo' is set to 1");
 	g_bDefaultTeams = GetConVarBool(g_hDefaultTeams);
 	HookConVarChange(g_hDefaultTeams, OnConvarChanged);
 	
@@ -282,37 +282,65 @@ stock void SetTeamLogos(int logocount)
 
 stock void AddDefaultTeamLogos()
 {
-	PushArrayString(g_hTeamLogos, "astrl");
-	PushArrayString(g_hTeamLogos, "boom");
-	PushArrayString(g_hTeamLogos, "brav");
+	PushArrayString(g_hTeamLogos, "nein");
+	PushArrayString(g_hTeamLogos, "apex");
+	PushArrayString(g_hTeamLogos, "astr");
+	PushArrayString(g_hTeamLogos, "avg");	
+	PushArrayString(g_hTeamLogos, "big");
+	PushArrayString(g_hTeamLogos, "bne");
+	PushArrayString(g_hTeamLogos, "bravg");
 	PushArrayString(g_hTeamLogos, "c9");
-	PushArrayString(g_hTeamLogos, "chaos");
-	PushArrayString(g_hTeamLogos, "col");
-	PushArrayString(g_hTeamLogos, "detna");
-	PushArrayString(g_hTeamLogos, "dig");
+	PushArrayString(g_hTeamLogos, "cope");
+	PushArrayString(g_hTeamLogos, "cplx");
+	PushArrayString(g_hTeamLogos, "dig");	
+	PushArrayString(g_hTeamLogos, "ent");
+	PushArrayString(g_hTeamLogos, "eter");
+	PushArrayString(g_hTeamLogos, "evl");	
 	PushArrayString(g_hTeamLogos, "ence");
+	PushArrayString(g_hTeamLogos, "furi");
 	PushArrayString(g_hTeamLogos, "faze");
+	PushArrayString(g_hTeamLogos, "flux");
 	PushArrayString(g_hTeamLogos, "fntc");
-	PushArrayString(g_hTeamLogos, "furia");
+	PushArrayString(g_hTeamLogos, "forz");
+	PushArrayString(g_hTeamLogos, "mngz");	
+	PushArrayString(g_hTeamLogos, "gl");
+	PushArrayString(g_hTeamLogos, "gray");
+	PushArrayString(g_hTeamLogos, "god");
 	PushArrayString(g_hTeamLogos, "g2");
-	PushArrayString(g_hTeamLogos, "g3ner");
-	PushArrayString(g_hTeamLogos, "impe");
+	PushArrayString(g_hTeamLogos, "gamb");
+	PushArrayString(g_hTeamLogos, "hero");
+	PushArrayString(g_hTeamLogos, "hlr");
+	PushArrayString(g_hTeamLogos, "ibp");	
+	PushArrayString(g_hTeamLogos, "itb");
+	PushArrayString(g_hTeamLogos, "ihc");	
 	PushArrayString(g_hTeamLogos, "intz");
+	PushArrayString(g_hTeamLogos, "imp");	
+	PushArrayString(g_hTeamLogos, "imt");
 	PushArrayString(g_hTeamLogos, "keyd");
-	PushArrayString(g_hTeamLogos, "liqui");
-	PushArrayString(g_hTeamLogos, "mibr");
+	PushArrayString(g_hTeamLogos, "lumik");
+	PushArrayString(g_hTeamLogos, "liq");	
+	PushArrayString(g_hTeamLogos, "spir");
+	PushArrayString(g_hTeamLogos, "mibr");	
+	PushArrayString(g_hTeamLogos, "ride");
+	PushArrayString(g_hTeamLogos, "mont");
 	PushArrayString(g_hTeamLogos, "mouz");
 	PushArrayString(g_hTeamLogos, "navi");
 	PushArrayString(g_hTeamLogos, "nip");
+	PushArrayString(g_hTeamLogos, "nine");
+	PushArrayString(g_hTeamLogos, "nor");	
+	PushArrayString(g_hTeamLogos, "og");
+	PushArrayString(g_hTeamLogos, "out");
 	PushArrayString(g_hTeamLogos, "pain");
-	PushArrayString(g_hTeamLogos, "redc");
-	PushArrayString(g_hTeamLogos, "redm");
-	PushArrayString(g_hTeamLogos, "reneg");
-	PushArrayString(g_hTeamLogos, "tone");
-	PushArrayString(g_hTeamLogos, "vital");
+	PushArrayString(g_hTeamLogos, "ren");
+	PushArrayString(g_hTeamLogos, "rog");
+	PushArrayString(g_hTeamLogos, "spr");	
+	PushArrayString(g_hTeamLogos, "sk");
+	PushArrayString(g_hTeamLogos, "shrk");	
+	PushArrayString(g_hTeamLogos, "tyl");
+	PushArrayString(g_hTeamLogos, "vita");
+	PushArrayString(g_hTeamLogos, "vega");
 	PushArrayString(g_hTeamLogos, "vp");
-	PushArrayString(g_hTeamLogos, "w7m");
-	PushArrayString(g_hTeamLogos, "yeah");
+	PushArrayString(g_hTeamLogos, "zzn");
 }
 
 stock void SetTeamName(const char[] logo, int team)
